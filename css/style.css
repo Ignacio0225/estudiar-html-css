@@ -53,7 +53,7 @@ body {
   background-color: var(--yellow);
   cursor: pointer;
   padding: 20px 0px;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 /*cursor: pointer; is used to change the cursor to a pointer when hovering over the submit button.*/
 
