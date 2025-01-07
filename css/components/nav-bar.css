@@ -5,29 +5,22 @@
   background-color: #f9f9fa;
   padding: 20px 50px;
   box-sizing: border-box;
-  border-top: 1px solid rgba(121, 121, 121, 0.3);
+  border-top: var(--main-border);
 }
 .nav__list {
   display: flex;
   justify-content: space-between;
 }
-.nave__link {
-  position: relative;
+.nav__link {
   color: #2e363e;
+  position: relative;
 }
 
 .nav__notification {
-  background-color: tomato;
-  width: 30px;
-  height: 30px;
-  display: block;
-  border-radius: 15px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  font-weight: 600;
   position: absolute;
-  left: 190px;
-  bottom: 30px;
+  bottom: 15px;
+  left: 15px;
+}
+.nav__dot {
+  right: 0px;
 }
