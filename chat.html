@@ -51,10 +51,25 @@
             <img src="https://avatars.githubusercontent.com/u/29245056?s=200&v=4" />
 
             <div class="messagre-row__content">
-                <span class=message__author"">Nicolas</span>
+                <span class="message__author">Nicolas</span>
 
                 <div class="message__info">
-                    <span class="mesasge__buble">Hi!</span>
+                    <span class="message__bubble">Hi!</span>
+                    <span class="message__time">21:27</span>
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <div class="message-row message-row--own">
+
+
+            <div class="messagre-row__content">
+
+                <div class="message__info">
+                    <span class="message__bubble">Hi! nice to meet you!</span>
                     <span class="message__time">21:27</span>
                 </div>
 
@@ -64,7 +79,20 @@
 
 
     </main>
-
+    <form class="reply">
+        <div class="reply__column"><i class="fa-regular fa-square-plus fa-lg"></i></div>
+        <div class="reply__column">
+            <input type="text" placeholder="Write a message..." />
+            <i class="fa-regular fa-face-smile fa-lg"></i>
+            <button><i class="fa-solid fa-arrow-up"></i></button>
+        </div>
+    </form>
+    <div id="no-mobile">
+        <span>Mobile Only</span>
+    </div>
+    <div id="no-landscape">
+        <span>Portrait Only</span>
+    </div>
     <script src="https://kit.fontawesome.com/bff523ec0f.js" crossorigin="anonymous"></script>
 </body>
 
