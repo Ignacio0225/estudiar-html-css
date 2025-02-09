@@ -1,0 +1,55 @@
+body {
+  height: 1000vh;
+  margin: 20px;
+  /*display: flex;*/
+  /*justify-content: space-between;*/
+  /*flex-direction: column;*/
+  /*align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: column; /*수직으로 바꿈*/
+}
+
+div {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  background-color: #bc8f8f;
+}
+/*div:first-child {
+  background-color: blue;
+}*/
+/*div:last-child {
+  background-color: #16c416;
+}*/
+span {
+  background-color: red;
+}
+span:nth-child(2),
+span:nth-child(4) {
+  background-color: blue;
+}
+
+/*span:nth-child(even or odd) 짝수 홀수{
+background-color:blue}
+span:nth-child(3n+1) 3의 배수 +1
+{background-color:blue}
+
+*/
+
+/*.green {
+  background-color: green;
+  height: 100px;
+  width: 100px;
+  /*position: relative; relative는 자기자신을 기준으로 움직임 
+  absolut는 가장 가까운 부모 요소에서 (가장 relative 한곳)움직임 예)body
+  div에도 relative를 추가하면 div 안에서 움직임*/
+/*top: -10px;
+  left: -10px;
+  }*/
+/*inline-block은 block으로 인식하게됨 크기가 있음 
+문제가 많아서 사용하지 않음*/
+/*flexbox -> 
+1.자식속성에 아무것도 적지말아야함 예) div에 적지않고 body에 적어야함
+2.justfy-contante -> main axis 주축이 수평
+3.align-item -> cross axis 주축이 수직 
+4.flex-direction 으로 수직 수평을 바꿀 수 있음*/

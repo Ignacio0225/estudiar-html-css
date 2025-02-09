@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Playwrite+AU+SA:wght@100..400&display=swap");
+
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-family: "Dancing Script", sans-serif;
+}
+.size-challenge_playlist {
+  width: 410px;
+  height: 885px;
+  border: 5px solid #00c6ac;
+  padding: 0 30px;
+}
+.play-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 65px;
+  font-size: 20px;
+  font-weight: 300;
+}
+.play-header__title {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.album-play {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 45px;
+}
+.album-play__jacket {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+}
+.album-play__jacket-box {
+  width: 135px;
+  height: 135px;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: #ffbc12;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.album-play__jacket-box i {
+  font-size: 35px;
+  color: white;
+  position: absolute;
+}
+.album-play__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.album-play__title-main__random,
+.album-play__title-main__love {
+  font-size: 51px;
+  font-weight: bold;
+  margin: 0;
+}
+.album-play__tilte-subtitle {
+  font-size: 18px;
+  margin: 0;
+}
+
+.play-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+.play-btn__play {
+  width: 175px;
+  height: 55px;
+  border: 2px solid black;
+  border-radius: 10px;
+  box-shadow: -2px 4px 2px black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.play-btn__play-box {
+  font-size: 20px;
+}
+.play-btn__play-box i {
+  margin-right: 12px;
+}
+.circle {
+  width: 60px;
+  height: 60px;
+  border: 2px solid black;
+  border-radius: 50%;
+  box-shadow: -2px 4px 2px black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.play-list {
+  padding: 0;
+}
+.play-list__album {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+}
+.play-list__album-box {
+  width: 60px;
+  height: 60px;
+  border: 2.5px solid black;
+  border-radius: 10px;
+  margin-right: 15px;
+}
+.play-list__album > div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.play-list__album-title {
+  font-weight: bold;
+  font-size: 30px;
+}
+.paly-list__album-subtitle {
+  opacity: 0.5;
+  font-size: 15px;
+}
+.tomato {
+  background-color: tomato;
+}
+.palevioletred {
+  background-color: palevioletred;
+}
+.blue {
+  background-color: blue;
+}
+.teal {
+  background-color: teal;
+}

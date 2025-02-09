@@ -1,0 +1,85 @@
+span {
+  background-color: yellowgreen;
+  padding: 5px;
+  border-radius: 10px;
+}
+p span {
+  /* p의 자식인 span에 적용*/
+  color: blue;
+}
+
+div > span {
+  /* >는 자식 요소에 적용*/
+  text-decoration: underline;
+}
+p + div {
+  /* +는 p 바로 다음에 오는 요소에 적용*/
+  background-color: lightblue;
+}
+
+p ~ div {
+  /* ~는 p 뒤에 오는 모든 요소에 적용*/
+  color: red;
+}
+
+input {
+  border: 1px solid green;
+}
+
+/*input:optional {
+  border: 1px solid lightblue;
+}*/
+input:required {
+  border: 1px solid tomato;
+}
+input[type="password"] {
+  /* attribute으로 만 찾아서 속성변경 */
+  background-color: lightgray;
+}
+input[placeholder*="name"] {
+  /* placeholder에 name이 포함된 input */
+  background-color: blue;
+}
+input[placeholder~="name"] {
+  /* placeholder에 앞뒤 공백이 있는 name이 포함된 input */
+  background-color: blue;
+}
+
+button:active {
+  background-color: red;
+}
+button:hover {
+  background-color: blue;
+}
+button:focus {
+  background-color: green;
+}
+/*focus-within은 부모요소에 적용 
+자식요소에 focus 되면 부모요소가 적용됨*/
+form {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+form:focus-within {
+  border-color: blue;
+}
+/*form안에 있는 input에 focus 되면 적용됨*/
+
+form:hover input {
+  background-color: lightblue;
+}
+/*form안에 있는 input에 hover가 되면 적용됨*/
+form:hover input:focus {
+  background-color: lightgoldenrodyellow;
+}
+/*form안에 있는 input에 hover가 되면 적용되고 포커스도 적용 돼야함
+  if 같은 느낌*/
+form:visited {
+  background-color: lightcoral;
+}
+/*form이 방문되면 적용됨*/
+
+/*element:state */
