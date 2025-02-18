@@ -1,0 +1,25 @@
+body {
+  height: 1000vh;
+  margin: 50px;
+}
+
+input::placeholder {
+  color: red;
+  font-size: 1.5em;
+}
+
+p::selection {
+  background-color: yellow;
+  color: black;
+}
+
+:root {
+  --main-color: red;
+}
+/* root는 전역변수를 선언할 때 사용 */
+/*사용할때는 var(--main-color)로 사용 */
+:root {
+  --default-border: 1px solid black;
+}
+/* border: var(--default-border); */
+/* 이런식으로도 사용 가능*/

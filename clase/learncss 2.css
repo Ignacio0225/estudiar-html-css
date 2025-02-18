@@ -1,0 +1,71 @@
+/* cascading -> 우선순위, 위에서부터 마지막으로 적용됨 
+1,2,3 동일하면 3번이 마지막에 적용되어 1번과 2번을 덮음 */
+
+* {
+  border: 2px solid black;
+}
+/* *모든 요소에 적용 */
+html {
+  background-color: tomato;
+}
+
+body {
+  margin: 20px;
+  padding: 20px;
+  /*margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 5px;
+  margin-bottom: 10px;*/
+  background-color: blue;
+}
+/* mrgin:20px 5px: top bottom*/ /*padding 도 동일*/
+/* margin:20px 5px 10px 10px; top right bottom left */
+/*callapsing margin: top margin of the first element and bottom margin of the second element*
+첫번째 와 두번째 경계가 동일할때 생기는 현상 위아래 마진이 같이 움직임*/
+
+div {
+  /*display: inline-block;*/
+  /* block은 박스라고 생각하면됨, 
+  inline은 크기를 정할 수 없음 마진은 위아래 적용안됨 패딩도 적용가능*/
+  padding: 20px;
+  border: 2px solid black;
+}
+#first {
+  background-color: yellow;
+  width: 150px;
+  height: 150px;
+}
+#second {
+  background-color: green;
+  width: 100px;
+  height: 100px;
+}
+#third {
+  background-color: red;
+  width: 50px;
+  height: 50px;
+}
+span {
+  background-color: powderblue;
+  /*border: 2px dashed blue;*/
+  padding: 5px;
+  margin: 10px;
+}
+
+.btn {
+  padding: 10px;
+  border-radius: 10px;
+  width: 100px;
+  height: 100px;
+}
+.testclass {
+  background-color: pink;
+  color: wheat;
+}
+.teal {
+  background-color: yellowgreen;
+}
+
+/*CLASS는 여러가지 이름을 가질 수 있음
+(점).className = class="className className2"
+(샵)#idName = id="idName"*/
